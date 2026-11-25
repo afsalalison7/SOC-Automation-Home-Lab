@@ -115,3 +115,5 @@ Because this environment runs on **GitHub Codespaces** rather than a traditional
 
 ## 5. Security & Operational Precautions
 * **Isolated Lab Execution:** Adversary simulation (`trappedbaai.exe`) was strictly confined to an isolated virtual machine with no access to production networks.
+* **Ephemeral Cloud Hygiene:** Because GitHub Codespaces forwarded URLs are accessible over HTTPS when set to public visibility for webhook delivery, all API keys, forwarded Codespace URLs, and email addresses have been redacted from screenshots and configuration files, and Codespaces are stopped when not actively testing.
+
