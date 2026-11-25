@@ -1,5 +1,4 @@
 
-
 <ossec_config>
   <localfile>
     <location>Microsoft-Windows-Sysmon/Operational</location>
