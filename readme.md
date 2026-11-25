@@ -16,7 +16,7 @@ This project demonstrates the end-to-end architecture, deployment, and automatio
 ### Logical Architecture & Data Flow
 Because this environment runs on **GitHub Codespaces** rather than a traditional VPS behind a static perimeter firewall, inter-service communication is managed through Codespaces' encrypted **Port Forwarding** (`Private` vs. `Public` visibility controls), while endpoint configuration and adversary simulation are driven via **PowerShell**.
 
-![Logical SOC Lab Architecture Diagram](screenshots/01-architecture-diagram.png)
+![Logical SOC Lab Architecture Diagram](screenshots/01-architecture-diagram.jpg)
 
 ### Infrastructure & Tooling Stack
 
