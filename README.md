@@ -1,6 +1,6 @@
 # 🛡️ Automated SOC Home Lab: SIEM, SOAR & Incident Response Pipeline (GitHub Codespaces & PowerShell)
 
-[https://img.shields.io/badge/SIEM-Wazuh-0052cc?style=flat-square]
+[[https://img.shields.io/badge/SIEM-Wazuh-0052cc?style=flat-square](https://img.shields.io/badge/SIEM-Wazuh-0052cc?style=flat-square)]
 [https://img.shields.io/badge/SOAR-Shuffle-6f42c1?style=flat-square]
 [https://img.shields.io/badge/Case%20Management-TheHive-cf222e?style=flat-square]
 [https://img.shields.io/badge/Telemetry-Sysmon-1f6feb?style=flat-square]
