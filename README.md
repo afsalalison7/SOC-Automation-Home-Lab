@@ -125,8 +125,6 @@ Because this environment runs on **GitHub Codespaces** rather than a traditional
 
 ---
 
----
-
 ## 6. Repository Structure & Artifacts
 * [`configs/local_rules.xml`](configs/local_rules.xml)
 * [`configs/ossec-manager-snippets.xml`](configs/ossec-manager-snippets.xml)
