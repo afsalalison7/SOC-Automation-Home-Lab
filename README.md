@@ -75,15 +75,15 @@ Because this environment runs on **GitHub Codespaces** rather than a traditional
 ![Sysmon Operational Event ID 1 Process Creation Log](screenshots/03-sysmon-eventviewer.png)
 
 4. **Evasion-Resistant Custom Rule (`local_rules.xml`):**
-   * Authored Custom Rule ID `100003` (Severity Level `15`) mapped to **MITRE ATT&CK T1003**.
+   * Authored Custom Rule ID `100002` (Severity Level `15`) mapped to **MITRE ATT&CK T1003**.
    * Rather than matching on the executable filename (`Image`), which attackers easily alter, the rule inspects the internal PE header field `win.eventdata.originalFileName` for `(?i)mimikatz` and dynamically logs the original binary name in the alert description.
 
-![Wazuh Custom Detection Rule 100003 XML](screenshots/05-custom-rule-xml.png)
+![Wazuh Custom Detection Rule 100002 XML](screenshots/05-custom-rule-xml.png)
 
-![Wazuh Custom Detection Rule 100003 XML - Continued](screenshots/05-custom-rule-xml-02.png)
+![Wazuh Custom Detection Rule 100002 XML - Continued](screenshots/05-custom-rule-xml-02.png)
 
 5. **Detection Validation via PowerShell:**
-   * Renamed `mimikatz.exe` to **`trappedbaai.exe`** using PowerShell (`Rename-Item`) and executed `.\trappedbaai.exe`. Despite the renamed binary, Wazuh immediately triggered the Level 15 credential-dumping alert (`Rule 100003`).
+   * Renamed `mimikatz.exe` to **`trappedbaai.exe`** using PowerShell (`Rename-Item`) and executed `.\trappedbaai.exe`. Despite the renamed binary, Wazuh immediately triggered the Level 15 credential-dumping alert (`Rule 100002`).
 
 ![Wazuh Alert Triggered by Renamed Binary trappedbaai.exe](screenshots/06-mimikatz-alert.png)
 
@@ -92,7 +92,7 @@ Because this environment runs on **GitHub Codespaces** rather than a traditional
 ---
 
 ### Phase 4: SOAR Orchestration, Enrichment & Automated Alerting
-1. **Wazuh-to-Shuffle Webhook Integration:** Configured an `<integration>` block in `friendly space system` (`ossec.conf`) to forward Rule `100003` alerts directly to a Shuffle Webhook trigger.
+1. **Wazuh-to-Shuffle Webhook Integration:** Configured an `<integration>` block in `friendly space system` (`ossec.conf`) to forward Rule `100002` alerts directly to a Shuffle Webhook trigger.
 2. **Automated IOC Parsing & VirusTotal Enrichment:**
    * Built a Shuffle playbook that extracts the clean SHA-256 hash using a **Regex Capture Group** node.
    * Queried **VirusTotal API v3** (`/api/v3/files/{id}`) to retrieve multi-vendor threat intelligence scores (`63/71` malicious detections).
