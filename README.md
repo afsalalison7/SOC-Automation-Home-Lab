@@ -1,10 +1,10 @@
 # 🛡️ Automated SOC Home Lab: SIEM, SOAR & Incident Response Pipeline (GitHub Codespaces & PowerShell)
 
-[[https://img.shields.io/badge/SIEM-Wazuh-0052cc?style=flat-square](https://img.shields.io/badge/SIEM-Wazuh-0052cc?style=flat-square)]
-[https://img.shields.io/badge/SOAR-Shuffle-6f42c1?style=flat-square]
-[https://img.shields.io/badge/Case%20Management-TheHive-cf222e?style=flat-square]
-[https://img.shields.io/badge/Telemetry-Sysmon-1f6feb?style=flat-square]
-[https://img.shields.io/badge/License-MIT-2da44e?style=flat-square]
+<img src="https://img.shields.io/badge/SIEM-Wazuh-0052cc?style=flat-square" alt="SIEM">
+<img src="https://img.shields.io/badge/SOAR-Shuffle-6f42c1?style=flat-square" alt="SOAR">
+<img src="https://img.shields.io/badge/Case%20Management-TheHive-cf222e?style=flat-square" alt="Case Management">
+<img src="https://img.shields.io/badge/Telemetry-Sysmon-1f6feb?style=flat-square" alt="Telemetry">
+<img src="https://img.shields.io/badge/License-MIT-2da44e?style=flat-square" alt="License">
 
 ## 1. Executive Summary
 This project demonstrates the end-to-end architecture, deployment, and automation of a **Security Operations Center (SOC) Home Lab** hosted in **GitHub Codespaces** and administered via **Windows PowerShell**. By integrating **Wazuh** (SIEM/XDR), **Sysmon** (Endpoint Telemetry), **Shuffle** (SOAR), **VirusTotal** (Threat Intelligence), and **TheHive** (Case Management), this lab replicates a production-grade SOC detection, enrichment, and alerting pipeline.
